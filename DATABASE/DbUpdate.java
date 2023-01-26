@@ -1,3 +1,4 @@
+package DATABASE;
 import java.sql.*;
 
 class DbUpdate {

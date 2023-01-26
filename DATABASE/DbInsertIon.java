@@ -1,3 +1,4 @@
+package DATABASE;
 import java.sql.*;
 class DbInsertIon {
     public static void main(String[]args){

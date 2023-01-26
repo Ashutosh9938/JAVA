@@ -1,3 +1,4 @@
+package DATABASE;
 import java.sql.*;
 class DbShowRecords{
     public static void main(String[]args){

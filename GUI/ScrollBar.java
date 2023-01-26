@@ -1,4 +1,4 @@
-//scroll bar
+package GUI;
 import javax.swing.*;
 import java.awt.event.*;
 public class ScrollBar {
