@@ -7,8 +7,7 @@ class DbUpdate {
             Class.forName("com.mysql.jdbc.Driver");
             Connection cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/cu","root","pwd");
             Statement st=cn.createStatement();
-            String query="UPDATE Employee SET salary=5000 WHERE POST='manager'";
-            int r=st.executeUpdate(query);
+            int r=st.executeUpdate("UPDATE Employee SET salary=5000 WHERE POST='manager'");
             System.out.println(r);
             cn.close();
         }catch(ClassNotFoundException e){

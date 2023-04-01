@@ -1,4 +1,3 @@
-package GUI;
 import java.awt.*;
 class MenuA extends Frame{
 Menu file,edit,n;
@@ -8,9 +7,9 @@ public MenuA(){
 setSize(400,500);
 bar=new MenuBar();
 setMenuBar(bar);
-Menu file=new Menu("file");
+file=new Menu("file");
 bar.add(file);
-Menu edit=new Menu("edit");
+edit=new Menu("edit");
 bar.add(edit);
 n=new Menu("new");
 file.add(n);

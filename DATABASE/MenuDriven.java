@@ -37,8 +37,9 @@ class MenuDriven {
         System.out.println("Enter Your Name");
         String name=scan.nextLine();
         PreparedStatement s=cn.prepareStatement("SELECT COUNT*FROM student WHERE NAME=?");
+        s.setString(1, name);
         ResultSet rs=s.executeQuery();
-        rs.next();
+     
         int count=rs.getInt(1);
         System.out.println("Number Of Records of"+name+"="+count);
     }catch(SQLException e){

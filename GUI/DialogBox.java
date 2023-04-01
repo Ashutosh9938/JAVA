@@ -1,4 +1,3 @@
-package GUI;
 import javax.swing.*;
 import java.awt.event.*;
 public class DialogBox implements ActionListener,WindowListener{
@@ -20,7 +19,7 @@ public class DialogBox implements ActionListener,WindowListener{
         String ss=JOptionPane.showInputDialog(null, "enter a number");
         int num=Integer.parseInt(ss);
         if(num%2==0){
-            JOptionPane.showMessageDialog(null, "even", "example",JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(null, "even");
                 }else{
                     JOptionPane.showMessageDialog(null, "odd");
                 }
@@ -35,7 +34,7 @@ public class DialogBox implements ActionListener,WindowListener{
         public void windowDeactivated(WindowEvent e) {}
         public void windowOpened(WindowEvent e){}
         public void windowClosing(WindowEvent e) {
-            int c=JOptionPane.showConfirmDialog(null, "CHOOSE","choose",JOptionPane.YES_NO_OPTION);
+            int c=JOptionPane.showConfirmDialog(null,"wanna exit","choose",JOptionPane.YES_NO_OPTION);
             if(c==JOptionPane.YES_OPTION){
                 System.exit(0);
             }

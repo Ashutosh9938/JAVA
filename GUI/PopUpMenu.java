@@ -1,15 +1,15 @@
-package GUI;
+
 import javax.swing.*;
 import java.awt.event.*;
 public class PopUpMenu implements ActionListener,MouseListener{
     JFrame f;
-    JTextArea t;
+    JTextField t;
     JPopupMenu p;
     JMenuItem sa,copy,paste,cut,exit;
     public  PopUpMenu(){
         f=new JFrame();
         f.setSize(200,500);
-        t=new JTextArea();
+        t=new JTextField();
         t.setBounds(200,200,400,400);
         p=new JPopupMenu();
         f.add(p);f.add(t);

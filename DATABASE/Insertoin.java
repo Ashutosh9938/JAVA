@@ -8,7 +8,7 @@ class Insertion {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection cn = DriverManager.getConnection("jdbc.mysql://localhost:3306/bipin","root",""); 
                 PreparedStatement stmt = cn.prepareStatement("INSERT INTO Student VALUES(?,?,?)");
-                int count = 0;;
+                int count = 0;
                 String prompt;
                 do{
                     System.out.println("Enter Roll Number: ");
